@@ -86,7 +86,7 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button class="style"  onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
@@ -111,8 +111,8 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = `<h1 class="startTimer fw-bold">${count}</h1>`;
-    // console.log(countdownOverlay.innerText);
+    countdownOverlay.innerHTML = `<h1 class="fw-bold">${count}</h1>`;
+    console.log(countdownOverlay.innerText);
     // finished timer
     if (count === -1) {
       // -------------- START TYPING -----------------
