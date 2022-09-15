@@ -47,6 +47,7 @@ const typeController = e => {
       newLetter === " " ? "▪" : newLetter
     }</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
@@ -112,7 +113,7 @@ const start = () => {
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1 class="fw-bold">${count}</h1>`;
-    // console.log(countdownOverlay.innerText);
+    console.log(countdownOverlay.innerText);
     // finished timer
     if (count === -1) {
       // -------------- START TYPING -----------------
