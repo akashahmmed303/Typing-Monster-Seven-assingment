@@ -15,14 +15,17 @@
     />
   </head>
   <body>
+
+    <!-- header  -->
+
     <header>
       <nav
         class="navbar navbar-dark bg-dark text-white navbar-expand-lg shadow border-bottom-2"
       >
         <div class="container">
           <a class="navbar-brand fw-bold fs-2" href="#"
-            >TYPING
-            <span class="bg-warning py-1 px-2 rounded-2">MASTER</span></a
+            >SPEED
+            <span class="bg-warning py-1 px-2 rounded-2">TYPER_</span></a
           >
           <button
             class="navbar-toggler"
@@ -39,17 +42,17 @@
             <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link fs-6 fw-semibold"
+                  class="nav-link fs-6 fw-semibold text-info"
                   aria-current="page"
                   href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6 fw-semibold" href="#">Trending</a>
+                <a class="nav-link fs-6 fw-semibold" href="#H">Trending</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-6 fw-semibold" href="blog.html">Blogs</a>
+                <a class="nav-link fs-6 fw-semibold text-danger" href="#F">Blogs</a>
               </li>
             </ul>
           </div>
@@ -57,7 +60,66 @@
       </nav>
     </header>
 
-    <main></main>
+
+    <!-- main  -->
+
+
+
+    <main style="min-height: 45vh">
+        <div id="blog">
+            <div class="container">
+                <div class="row">
+                    <h1 class="fw-bold py-5 text-warning text-center">Welcome to Typing Monster Blogs</h1>
+                </div>
+                <div id='F' class="row mx-2">
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-info">Difference Between Local-Storage and Session Storage ?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans: </span>LocalStorage and SessionStorage are relatively new APIs (meaning, not all legacy browsers will support them) and are near identical (both in APIs and capabilities) with the sole exception of persistence. sessionStorage (as the name suggests) is only available for the duration of the browser session (and is deleted when the tab or window is closed) - it does, however, survive page reloads</p>
+                    </div>
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-info">What is difference between local and global scope in JavaScript?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans: </span>A global IP address is meant to be publicly accessible from the Internet.
+
+                                A local-scope IP address is not routable to the Internet. This means that if your device is assigned local-scope address, your device will not be able to access the Internet, however you will still be able to access campus network resources. A device that requires access to, or reachability from the Internet should be configured with an global IP address.</p>
+                    </div>
+                    <div class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-info">HOW Event loop Works on Javascripts?</h2>
+                        <p class="text-justify fs-5 text-white"><span
+                                class="fs-4 text-danger fw-semibold">Ans: </span>The Event Loop has one simple job — to
+                            monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop
+                            will take the first event from the queue and will push it to the Call Stack, which
+                            effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+                    </div>
+                    <div id='H' class="col-12 border rounded-3 p-4 mb-4 bg-dark shadow">
+                        <h2 class="text-info">The reasons of getting undefined?</h2>
+                        <p class="text-justify fs-5 text-white"><span class="fs-4 text-danger fw-semibold">Ans:</span>
+                        <p class="text-justify fs-5 text-white"> 01. A variable that has not been assigned a value is of
+                            type undefined</p>
+                        <p class="text-justify fs-5 text-white"> 02. A method or statement also returns undefined if the
+                            variable that is being evaluated does not have an assigned value.</p>
+                        <p class="text-justify fs-5 text-white"> 03. A function returns undefined if a value was not
+                            returned.</p>
+                        <p class="text-justify fs-5 text-white"> 04. A property which is not exist on an object,if we
+                            try
+                            to access this property then we get undefined.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<!-- footer -->
+    <footer class="bg-dark text-white" id="footer">
+        <div class="container text-center py-5">
+            <h4>&copy;All rights reserved by TYPING-MASTER.</h4>
+        </div>
+    </footer>
+
+<!-- script link -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
