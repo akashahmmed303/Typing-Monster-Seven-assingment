@@ -112,7 +112,7 @@ const start = () => {
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1 class="startTimer fw-bold">${count}</h1>`;
-    console.log(countdownOverlay.innerText);
+    // console.log(countdownOverlay.innerText);
     // finished timer
     if (count === -1) {
       // -------------- START TYPING -----------------
